@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem;
+            }
+
+            ol {
+                background: white;
+                padding: 2rem 2.5rem;
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+                line-height: 1.8;
+            }
+
+            li {
+                margin: 0.75rem 0;
+                padding: 0.5rem;
+                transition: all 0.3s ease;
+                border-radius: 6px;
+            }
+
+            li:hover {
+                background-color: #f0f0f0;
+                transform: translateX(5px);
+            }
+
+            ol ol {
+                margin-top: 0.5rem;
+                margin-left: 1rem;
+                padding: 1rem;
+                background-color: #f8f9fa;
+                border-left: 3px solid #667eea;
+                border-radius: 8px;
+            }
+
+            ol ol ol {
+                background-color: #e9ecef;
+                border-left-color: #764ba2;
+            }
+
+            li[style*="color: red"] {
+                color: #e74c3c !important;
+                font-weight: 600;
+            }
+
+            li[style*="list-style-type: none"] {
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>
+                A
+                <ol>
+                    <li style="list-style-type: none">&nbsp</li>
+                    <li style="color: red;">B</li>
+                    <li>B</li>
+                    <ol>
+                        <li>C</li>
+                        <li>C</li>
+                    </ol>
+                </ol>
+            </li>
+            <li>
+                A
+                <ol>
+                    <li>
+                        B
+                        <ol>
+                            <li>C</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>A</li>
+        </ol>
+    </body>
+</html>
