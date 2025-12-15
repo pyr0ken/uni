@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>کلاس</title>
+        <style>
+            body {
+		background: "#000"
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .top {
+                color: rgb(0, 0, 0);
+                background-color: #ccc;
+                text-align: center;
+                padding: 15px;
+                border-radius: 20px;
+                margin: 20px;
+                height: 15vh;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="top">
+            <h1>Frontend Class</h1>
+            <p>
+                <span style="color: #ff9100">HTML</span> &
+                <span style="color: #1a40ec">CSS</span> Fundamentals
+            </p>
+        </header>
+    </body>
+</html>
