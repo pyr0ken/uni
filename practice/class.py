@@ -1,26 +1,18 @@
-class Calculator():
-    def __init__(self, nums):
-        self.nums = nums
-    
-    def jame(self):
-        summer = sum(map(int, self.nums.split()))
-        print(summer)
+class Person:
+    def __init__(self, name):
+        self.n = name
+        # print(self.name)
         
-    def menha(self):
-        ...
+    def show(self):
+        print(self.n)
         
-    def zarb(self):
-        self.zarb = 1
-        for i in self.nums.split():
-            self.zarb *= int(i)
-        print(self.zarb)
         
-    def taghsim(self):
-        ...
-        
-    
-num = Calculator("1 2 3 55 8")
+a = Person(name="ali")
+b = Person(name="mohammad")
 
-num.jame("5 8 6 9")
-num.zarb()
+print(a.n)
+print(b.n)
 
+# function: print() list() int()
+# method: my_list.append() .test()
+# attributes: class.name
